@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    let state: AppState
+
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: CounterDetailView()) {
+                NavigationLink(destination: CounterDetailView(state: self.state)) {
                     Text("Counter demo")
                 }
-                NavigationLink(destination: CounterDetailView()) {
+                NavigationLink(destination: CounterDetailView(state: self.state)) {
                     Text("Favorite primes")
                 }
             }
@@ -24,16 +26,16 @@ struct ContentView: View {
 }
 
 struct CounterDetailView: View {
-    @State var counter = 0
+    let state: AppState
 
     var body: some View {
         VStack {
             HStack {
-                Button(action: {self.counter -= 1}) {
+                Button(action: {self.state.counter -= 1}) {
                     Text("-")
                 }
-                Text("\(self.counter)")
-                Button(action: {self.counter += 1}) {
+                Text("\(self.state.counter)")
+                Button(action: {self.state.counter += 1}) {
                     Text("+")
                 }
             }
@@ -42,5 +44,5 @@ struct CounterDetailView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(state: AppState())
 }

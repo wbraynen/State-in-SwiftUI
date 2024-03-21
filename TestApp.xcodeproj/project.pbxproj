@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE197DE32BACFAE00066AF12 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE197DE22BACFAE00066AF12 /* AppState.swift */; };
 		BE628D942BACEF23000B0AA5 /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE628D932BACEF23000B0AA5 /* TestAppApp.swift */; };
 		BE628D962BACEF23000B0AA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE628D952BACEF23000B0AA5 /* ContentView.swift */; };
 		BE628D982BACEF25000B0AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE628D972BACEF25000B0AA5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE197DE22BACFAE00066AF12 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		BE628D902BACEF23000B0AA5 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE628D932BACEF23000B0AA5 /* TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppApp.swift; sourceTree = "<group>"; };
 		BE628D952BACEF23000B0AA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				BE628D952BACEF23000B0AA5 /* ContentView.swift */,
 				BE628D972BACEF25000B0AA5 /* Assets.xcassets */,
 				BE628D992BACEF25000B0AA5 /* Preview Content */,
+				BE197DE22BACFAE00066AF12 /* AppState.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE197DE32BACFAE00066AF12 /* AppState.swift in Sources */,
 				BE628D962BACEF23000B0AA5 /* ContentView.swift in Sources */,
 				BE628D942BACEF23000B0AA5 /* TestAppApp.swift in Sources */,
 			);
