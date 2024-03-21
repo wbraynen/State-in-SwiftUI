@@ -9,13 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                NavigationLink(destination: CounterDetailView()) {
+                    Text("Counter demo")
+                }
+                NavigationLink(destination: CounterDetailView()) {
+                    Text("Favorite primes")
+                }
+            }
+            .navigationBarTitle("Counter demo")
         }
-        .padding()
+    }
+}
+
+struct CounterDetailView: View {
+    @State var counter = 0
+
+    var body: some View {
+        VStack {
+            HStack {
+                Button(action: {self.counter -= 1}) {
+                    Text("-")
+                }
+                Text("\(self.counter)")
+                Button(action: {self.counter += 1}) {
+                    Text("+")
+                }
+            }
+        }
     }
 }
 
